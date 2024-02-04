@@ -15,5 +15,7 @@ members = [
 
 [workspace.dependencies]
 anyhow = { version = "1.0.79" }
+lsp-types = { version = "0.95.0" }
 thiserror = { version = "1.0.56 " }
 tokio = { version = "1.36.0" }
+url = { version = "2.5.0" }

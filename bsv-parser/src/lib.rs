@@ -1,14 +1,6 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+//! A hand-written, fault-tolerant recursive descent parser for Bluespec SystemVerilog
+//!
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+mod scanner;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub use scanner::{CounterMode, Location, Position, Scanner, Span};
